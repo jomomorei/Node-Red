@@ -1,5 +1,5 @@
 
-# Downloading Salesforce Data Into Excel/CSV File 
+# Downloading Salesforce Data Writing Into Excel/CSV File 
 
 I happend accross Node-Red months ago. It's a programming tool for wiring together hardware devices, APIs and online services in new and interesting ways. 
 The URL is here: https://nodered.org/
