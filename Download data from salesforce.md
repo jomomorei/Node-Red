@@ -4,7 +4,7 @@
 I happend accross Node-Red months ago. It's a programming tool for wiring together hardware devices, APIs and online services in new and interesting ways. 
 The URL is here: https://nodered.org/
 
-Last week, i tried to use it to connnect to salesforce and get the data by SQL. Then saved the data into Excel file and CSV files. A little pity, japanese can not be recognized in the CSV file.
+Last week, i tried to use it to connnect to salesforce and get the data by SOQL. Then saved the data into Excel file and CSV files. A little pity, japanese can not be recognized in the CSV file.
 
 ![Complete Image](/img/b6NDwE.png)
 
@@ -28,3 +28,4 @@ The first time to use it, you should download the node firstly. Click the top-ri
 
 ![Complete Image](/img/njL2qR.png)
 ![Complete Image](/img/j6swxV.png)
+
