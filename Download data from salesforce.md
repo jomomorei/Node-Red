@@ -49,3 +49,4 @@ Finish version is like this. Consumer Key and Consumer Secret have be produced a
 
 Copy the three items and back to the node-red page, fill them and soql node setting is finished.
 
+Continuing...
