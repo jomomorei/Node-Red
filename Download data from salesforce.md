@@ -72,5 +72,11 @@ Drag excel node to the behind, and specify the absolute filepath.
 
 * Add debug node
 
-If you want to watch the output msg in the console, add a debug node. finally, line nodes like the top image. 
+If you want to watch the output msg in the console, add a debug node. 
+
+Finally, Wire nodes like the top image and click the Payload button on the top-right. The Excel export setting has been done.
+
+If you want to make it work immediately, click the inject button. And you should see the output data in the debug tab in the console.
+
+
 
