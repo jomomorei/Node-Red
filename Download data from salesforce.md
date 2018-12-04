@@ -1,5 +1,5 @@
 
-# Downloading Salesforce Data Writing Into Excel/CSV File 
+# Downloading Salesforce Data Writing Into EXCEL File 
 
 I happend accross Node-Red months ago. It's a programming tool for wiring together hardware devices, APIs and online services in new and interesting ways. 
 The URL is here: https://nodered.org/
@@ -49,4 +49,28 @@ Finish version is like this. Consumer Key and Consumer Secret have be produced a
 
 Copy the three items and back to the node-red page, fill them and soql node setting is finished.
 
-Continuing...
+* Add a function node
+
+Drag function node onto flow workspace. And open the sidebar.
+
+In the soql node, we fetch data from salesforce in json form. Although, the next excel node can converts a JSON or array of JSONs to excel and writes to the file. The following coding is necessary to fetch clean data.
+
+```javascript
+var str=msg.payload.records;
+var astr=new Array();
+for(i=0;i<str.length;i++){
+    var p=eval('('+JSON.stringify(str[i])+')');
+    astr[i]=p;
+}
+msg.payload=astr;
+return msg;
+```
+
+* Add a EXCEL node
+
+Drag excel node to the behind, and specify the absolute filepath.
+
+* Add debug node
+
+If you want to watch the output msg in the console, add a debug node. finally, line nodes like the top image. 
+
