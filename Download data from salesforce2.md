@@ -11,6 +11,7 @@ The foucs is the below banch.
 #### 1.set msg.payload
 
 ![Complete Image](/img/7yMB63.png)
+
 This is a change node. The data we get on the last node(salesforce connection, a soql node) is a json object. It contains two attributions: size and records. By this node, we persist records only.
 
 #### 2.json to csv converter
@@ -21,6 +22,7 @@ It will convert json data to string form.
 #### 3. write into csv
 
 ![Complete Image](/img/2dfAMQ.png)
+
 This is a file node. File nodes have two pattern: in and out. Of course, here is the out one. Open the sidebar, file path and name should be specified. It has three anction modes: append, overwrite and delete.
 
 In fact, i didn't use csv node in this branch flow but used the json-to-csv-converter node. Because it's more simple.
