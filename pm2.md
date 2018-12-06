@@ -16,6 +16,7 @@ $ npm i pm2-windows-service –g
 $ pm2-service-install -n myservice
 ```
 Then set the system variable：PM2_SERVICE_SCRIPTS = PM2
+
 Restart myservice
 
 ### Node-red Start setting commands
@@ -23,5 +24,5 @@ Restart myservice
 $ pm2 start C:\Users\(Username)\AppData\Roaming\npm\node_modules\node-red\red.js
 $ pm2 save
 ```
-Note:(Username)is your PC user id. 
+Note: _(Username)is your PC user id_. 
 
