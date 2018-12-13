@@ -3,15 +3,15 @@ named MotionBoard Cloud.
 
 ![Complete Image](/img/flow.png)
 
-MotionBoard is a powerful BI tool can analyze and visualize business data, like Power BI.
+MotionBoard is a powerful BI tool can analyze and visualize business data, similar to Power BI.
 
-The question is the csv file we get from node-red do not support Japanese i have mentioned in other post.I have tyied times to change the encoding before the data were exported. It didn't work. Because the export node file fixed the final encoding. Japanese is not in the consideration.
+The question is the csv file i get from node-red do not support Japanese which i have mentioned in the other post.I have tried times to change the encoding before the data were exported. But it didn't work. Because the export node file fixed the final encoding. Japanese is not in the consideration.
 
-The best solution is to rewrite the output file node. It may spend a little more time on it. Maybe in future.
+The best solution is to rewrite the output file node. However, it may spend a little more time on it. Maybe in future.
 
-On the other hand, the Excel file seems got clean data. However, when i upload it to MotionBoard, the file comes unreadable. it made me a little sad. Then i open it and save it, magically, it come readable. 
+On the other hand, the Excel file seems to have got clean data. However, when i upload it to MotionBoard, the file became unreadable. it made me a little sad. Then i open it and saved it, magically, it came to be readable. 
 
-I mailed the MotionBoard coompany and got the reply: the difference of XML namespace specify method between the excel files created in excel application and in node-red.
+I mailed the MotionBoard company about the error and got the reason: the difference of XML namespace specify method between the excel files created in excel application and in node-red.
 
 Then I wrote some VBA commands to make the excel file opened and saved regularlly into a new folder at the scheduled time.
 ```
