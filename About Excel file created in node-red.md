@@ -5,11 +5,9 @@ named MotionBoard Cloud.
 
 MotionBoard is a powerful BI tool can analyze and visualize business data, similar to Power BI.
 
-The question is the csv file i get from node-red do not support Japanese which i have mentioned in the other post.I have tried times to change the encoding before the data were exported. But it didn't work. Because the export node file fixed the final encoding. Japanese is not in the consideration.
+The question is the csv file i get from node-red do not support Japanese which i have mentioned in the other post.I have tried times to change the encoding before the data were exported. But it didn't work. But when run on the another PC, the Japanese was recognized. The most possible reason is the different system setting of PCs.   
 
-The best solution is to rewrite the output file node. However, it may spend a little more time on it. Maybe in future.
-
-On the other hand, the Excel file seems to have got clean data. However, when i upload it to MotionBoard, the file became unreadable. it made me a little sad. Then i open it and saved it, magically, it came to be readable. 
+The Excel file could get clean data. However, when it was uploaded to MotionBoard cloud, the file became unreadable. While it was opened and saved once, magically, it came to be readable. 
 
 I mailed the MotionBoard company about the error and got the reason: the difference of XML namespace specify method between the excel files created in excel application and in node-red.
 
