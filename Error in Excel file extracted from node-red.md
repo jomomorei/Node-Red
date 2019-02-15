@@ -3,16 +3,19 @@ named MotionBoard Cloud.
 
 ![Complete Image](/img/flow.png)
 
-MotionBoard is a powerful BI tool can analyze and visualize business data, similar to Power BI.
+MotionBoard is a powerful BI tool can analyze and visualize business data. The data sources can be various of database, excel and csv.
 
-The question is the csv file i get from node-red do not support Japanese which i have mentioned in the other post.I have tried times to change the encoding before the data were exported. But it didn't work. But when run on the another PC, the Japanese was recognized. The most possible reason is the different system setting of PCs.   
+The question is the csv file i get from node-red do not recognize Japanese. About this I have tried some tests. It is related to PC enviroment.   
 
-The Excel file could get clean data. However, when it was uploaded to MotionBoard cloud, the file became unreadable. While it was opened and saved once, magically, it came to be readable. 
+The Excel file could get clean data. But, when it was uploaded to MotionBoard cloud, the file became unreadable. While it was opened and saved once, it came to be readable magically. 
 
-I mailed the MotionBoard company about the error and got the reason: the difference of XML namespace specify method between the excel files created in excel application and in node-red.
+I mailed the MotionBoard company about the error and got the reply: the difference of XML namespace specify method between the excel files created in excel application and in node-red.
 
-Then I wrote some VBA commands to make the excel file opened and saved regularlly into a new folder at the scheduled time.
-```
+It seems a difficult problem. 
+
+In the robotic process some simple VBA scripts can be useful: Open the origin excel file and saved it regularlly. To avoid error, copy the origin file as a new file is recommended.
+
+```VBA Script
 Private Sub Workbook_Open()
 
 NewTime = Now + TimeValue("00:00:10")
