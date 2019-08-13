@@ -24,6 +24,6 @@ This is a key step but simple step. It will convert the json data to string form
 
 This is a file node. File nodes have two pattern, in and out. Here is the out one. Open the sidebar, specify the file path and name. Three anction modes can be selected: append, overwrite and delete.
 
-In fact, i didn't use csv node in this branch flow but used the json-to-csv-converter node. Because it's more simple.
+In fact, i didn't use csv node in this branch flow. Instead i used the json-to-csv-converter node because of its simplicity.
 But if you want to specify the separator character, try csv node.
 
