@@ -1,4 +1,19 @@
-### Useful websites
+## Install steps
+1. Install Node.js：https://nodejs.org/en/
+
+2. Install Node-RED(Node.js command prompt)：
+````
+$ npm install -g --unsafe-perm node-red
+````
+
+3. Run Node-RED
+```
+$ node-red
+```
+Node-REDエディタにアクセスします。 http://localhost:1880.
+
+
+### Ref URL
 
 HP:https://nodered.org/
 
