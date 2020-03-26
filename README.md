@@ -1,4 +1,4 @@
-## Install steps
+## Installing steps
 1. Install Node.js：https://nodejs.org/en/
 
 2. Install Node-RED(Node.js command prompt)：
